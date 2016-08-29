@@ -17,7 +17,7 @@ switch (type) {
     pwd = cipher.update(password, 'utf8', 'hex')
     pwd += cipher.final('hex')
 
-    console.log(`[\x1B[33m${password}\x1B[39m]加密后的密码为：`)
+    console.log(`[\x1B[33m${password}\x1B[39m] after encryption:`)
     console.log(`\x1B[31m${pwd}\x1B[39m`)
     break
   case 'decode':
@@ -25,7 +25,7 @@ switch (type) {
     pwd = decipher.update(password, 'hex', 'utf8')
     pwd += decipher.final('utf8')    //  new Buffer(`${crypto.createHash('MD5').update(password, 'UTF-8').digest('hex')}`).toString('base64')
 
-    console.log(`[\x1B[31m${password}\x1B[39m]解密后的密码为：`)
+    console.log(`[\x1B[31m${password}\x1B[39m] after decryption:`)
     console.log(`\x1B[33m${pwd}\x1B[39m`)
     break
 }
