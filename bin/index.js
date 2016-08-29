@@ -3,11 +3,11 @@
 'use strict'
 
 const crypto = require('crypto')
-const key = '666666'
-const cipher = crypto.createCipher('aes192', key);
-const decipher = crypto.createDecipher('aes192', key);
 
-let {2: type, 3: password} = process.argv
+let {2: type, 3: key, 4: password} = process.argv
+
+let cipher = crypto.createCipher('aes192', key);
+let decipher = crypto.createDecipher('aes192', key);
 
 let pwd = 1
 

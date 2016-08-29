@@ -2,6 +2,6 @@
 
 ```
 npm install my-password
-mypwd encode 123
-mypwd decode XXXXX
+mypwd encode [your key] [your password]
+mypwd decode [your key] [your encrypted password]
 ```
