@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Jiasm/my-password.git"
   },
+  "bin": {
+    "mypwd": "./bin/index.js"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
